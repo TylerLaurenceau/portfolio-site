@@ -101,11 +101,11 @@ body{
   }
 
   .bottomNavResume:hover{
-    color:#FDEABF;
+    color:#DECDEF;
     text-decoration: underline;
 
     a{
-      color:#FDEABF;
+      color:#DECDEF;
       text-decoration: underline;
     }
   }
@@ -133,7 +133,7 @@ body{
   width:200px;
   border-radius: 100%;
   margin: auto;
-  margin-top: 5%;
+  margin-top: 3%;
   background-image: url("https://pbs.twimg.com/media/C-CfbekXYAAAa9y.jpg");
   background-repeat: none;
   background-position: center;
@@ -149,7 +149,29 @@ body{
 .aboutMeNames{
   color:white;
   margin: auto;
+  width:375px;
   font-family: 'Press Start 2P', cursive;
   text-align: center;
   margin-top: 3%;
+}
+
+.aboutMeCurrentName{
+  display: inline;
+  text-align: center;
+}
+
+.aboutMeArrowLeft{
+  float:left;
+}
+
+.aboutMeArrowLeft:hover{
+  color:yellow;
+}
+
+.aboutMeArrowRight{
+  float: right;
+}
+
+.aboutMeArrowRight:hover{
+  color:yellow;
 }

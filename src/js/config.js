@@ -18,7 +18,8 @@ function Config($stateProvider, $urlRouterProvider){
 
   .state('root.home.aboutMe', {
     url: '/aboutMe',
-    templateUrl: 'templates/aboutMe.tpl.html'
+    templateUrl: 'templates/aboutMe.tpl.html',
+    controller: 'AboutMeController as AboutMeController'
   })
 
   $urlRouterProvider.when('', '/home');
