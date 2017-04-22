@@ -1,0 +1,62 @@
+body{
+  background:#05141A;
+}
+
+.navContainer{
+  height:50px;
+  width:100%;
+  background: #EDA1AB;
+
+  img{
+    height:30px;
+    width:30px;
+    margin-left: 0px;
+  }
+
+  .navName{
+    color:white;
+    padding-top: 1%;
+    padding-left: 1%;
+    font-size: 130%;
+    font-family: 'Press Start 2P', cursive;
+    margin-right: 0px;
+  }
+}
+
+.homeBackground{
+  background-image:url("https://secure.static.tumblr.com/667aae89736c77b8d7420f874f04a9b8/u1absc7/LNRoa35eh/tumblr_static_filename_640_v2.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 625px;
+}
+
+.bottomNavContainer{
+  width:100%;
+  height:35px;
+
+  .bottomNavItems{
+    color:white;
+    font-family: 'Press Start 2P', cursive;
+    list-style: none;
+    text-align: center;
+
+    li{
+      display:inline-block;
+      margin-right: 5%;
+      margin-left: 3%;
+      }
+  }
+
+  .bottomNavAbout:hover{
+    color:#77F182;
+  }
+
+  .bottomNavProjects:hover{
+    color:#F49177;
+  }
+
+  .bottomNavContact:hover{
+    color:#7FE7F5;
+  }
+}

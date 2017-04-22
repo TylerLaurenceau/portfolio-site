@@ -16,7 +16,7 @@ function Config($stateProvider, $urlRouterProvider){
     templateUrl: 'templates/home.tpl.html'
   })
 
-  $urlRouterProvider.when('', '/login');
+  $urlRouterProvider.when('', '/home');
       $urlRouterProvider.otherwise('/not-found');
 }
 
