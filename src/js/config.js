@@ -16,6 +16,11 @@ function Config($stateProvider, $urlRouterProvider){
     templateUrl: 'templates/home.tpl.html'
   })
 
+  .state('root.home.aboutMe', {
+    url: '/aboutMe',
+    templateUrl: 'templates/aboutMe.tpl.html'
+  })
+
   $urlRouterProvider.when('', '/home');
       $urlRouterProvider.otherwise('/not-found');
 }

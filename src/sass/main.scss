@@ -65,26 +65,91 @@ body{
   .bottomNavItems{
     color:white;
     font-family: 'Press Start 2P', cursive;
-    list-style: none;
     text-align: center;
-    font-size: 100%;
+    font-size: 80%;
 
     li{
       display:inline-block;
       margin-right: 5%;
       margin-left: 3%;
+
+      a{
+        color:white;
+        text-decoration: none;
+      }
       }
   }
 
   .bottomNavAbout:hover{
     color:#77F182;
+    text-decoration: underline;
+
+    a{
+      color:#77F182;
+      text-decoration: underline;
+    }
   }
 
   .bottomNavProjects:hover{
     color:#F49177;
+    text-decoration: underline;
+
+    a{
+      color:#F49177;
+      text-decoration: underline;
+    }
+  }
+
+  .bottomNavResume:hover{
+    color:#FDEABF;
+    text-decoration: underline;
+
+    a{
+      color:#FDEABF;
+      text-decoration: underline;
+    }
   }
 
   .bottomNavContact:hover{
     color:#7FE7F5;
+    text-decoration: underline;
+
+    a{
+      color:#7FE7F5;
+      text-decoration: underline;
+    }
   }
+}
+
+.aboutMeTitle{
+  color:white;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 3%;
+}
+
+.aboutMePictureContainer{
+  height:200px;
+  width:200px;
+  border-radius: 100%;
+  margin: auto;
+  margin-top: 5%;
+  background-image: url("https://pbs.twimg.com/media/C-CfbekXYAAAa9y.jpg");
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  transition: all linear .5s;
+}
+
+.aboutMePictureContainer:hover{
+  background-image: url("https://pbs.twimg.com/media/C-Cg9ZlUIAAeVwD.jpg");
+  transition: all linear .5s;
+}
+
+.aboutMeNames{
+  color:white;
+  margin: auto;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  margin-top: 3%;
 }
