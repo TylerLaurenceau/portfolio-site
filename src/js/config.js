@@ -27,6 +27,11 @@ function Config($stateProvider, $urlRouterProvider){
     templateUrl: 'templates/myProjects.tpl.html'
   })
 
+  .state('root.home.resume', {
+    url: '/myResume',
+    templateUrl: 'templates/resume.tpl.html'
+  })
+
   $urlRouterProvider.when('', '/home');
       $urlRouterProvider.otherwise('/not-found');
 }

@@ -268,7 +268,7 @@ body{
     padding-top: 2%;
   }
 
-  .myProjectsPicture{
+  .myProjectsPictureView{
     width:175px;
     height:175px;
     border:4px solid white;
@@ -276,12 +276,105 @@ body{
     float:left;
     margin-top: 2%;
     margin-left: 2%;
-    img{
-      width:100%;
-      height:100%;
-      border-radius: 100%;
-    }
+    background: #77F182;
+    background-image: url("http://b.illbrown.com/img/camera-collection.gif");
+    background-size: cover;
+    transition: all linear .5s;
   }
+
+  .myProjectsPictureView:hover{
+    background-image: url("../images/view.PNG");
+    background-size: cover;
+    background-position: center;
+    transition: all linear .5s;
+  }
+
+  .myProjectsPictureBarkSpark{
+    width:175px;
+    height:175px;
+    border:4px solid white;
+    border-radius: 100%;
+    float:left;
+    margin-top: 2%;
+    margin-left: 2%;
+    background: #F49177;
+    background-image: url("https://68.media.tumblr.com/25ec1da1ceb3d8c59ff61abda466e66d/tumblr_mqpocpPXk01rtd1nko2_500.gif");
+    background-size: cover;
+    transition: all linear .5s;
+  }
+
+  .myProjectsPictureBarkSpark:hover{
+    background-image: url("../images/barkspark.PNG");
+    background-size: cover;
+    background-position: center;
+    transition: all linear .5s;
+  }
+
+  .myProjectsPictureLucid{
+    width:175px;
+    height:175px;
+    border:4px solid white;
+    border-radius: 100%;
+    float:left;
+    margin-top: 2%;
+    margin-left: 2%;
+    background: #006EE9;
+    background-image: url("http://31.media.tumblr.com/6fec583f2d356c5fac8b15ee380507f9/tumblr_mfikdsa59Y1rzy67oo1_500.gif");
+    background-size: cover;
+    transition: all linear .5s;
+  }
+
+  .myProjectsPictureLucid:hover{
+    background-image: url("../images/lucid.PNG");
+    background-size: cover;
+    background-position: center;
+    transition: all linear .5s;
+  }
+
+  .myProjectsPictureSouthBound{
+    width:175px;
+    height:175px;
+    border:4px solid white;
+    border-radius: 100%;
+    float:left;
+    margin-top: 2%;
+    margin-left: 2%;
+    background: yellow;
+    background-image: url("http://static.tumblr.com/a68b985e8a946aed8ac054acf44b27ff/d6qr5sm/77zogar2g/tumblr_static_95bppto8wmww8k4s48wogkgs4.gif");
+    background-size: cover;
+    transition: all linear .5s;
+  }
+
+  .myProjectsPictureSouthBound:hover{
+    background-image: url("../images/southbound.PNG");
+    background-size:contain;
+    background-position: center;
+    transition: all linear .5s;
+  }
+
+  .myProjectsPictureFestival{
+    width:175px;
+    height:175px;
+    border:4px solid white;
+    border-radius: 100%;
+    float:left;
+    margin-top: 2%;
+    margin-left: 2%;
+    background: lightpink;
+    background-image: url("http://static.tumblr.com/62b379dc2173290505a8c46df5ea91ab/n8hhky4/rjvnx0hlr/tumblr_static_7d8tzwi6lxgko000ow04gwww8.gif");
+    background-size: cover;
+    transition: all linear .5s;
+  }
+
+  .myProjectsPictureFestival:hover{
+    background-image: url("../images/festival.PNG");
+    background-size:cover;
+    background-position: center;
+    transition: all linear .5s;
+  }
+
+
+
 
   .myProjectsProjectTitle{
     font-family: 'Press Start 2P', cursive;
@@ -390,5 +483,27 @@ body{
     margin-bottom: 1%;
     font-size: 100%;
     margin-left: .5%;
+  }
+}
+
+.resumeTitle{
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: underline;
+  text-align: center;
+  color: white;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+.resume{
+  height:700px;
+  width:500px;
+  margin: auto;
+  margin-bottom: 2%;
+  border:2px dashed white;
+
+  img{
+    width:100%;
+    height:100%;
   }
 }
