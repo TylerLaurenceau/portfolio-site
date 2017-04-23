@@ -1,5 +1,10 @@
 body{
   background:#05141A;
+  cursor:pointer;
+     -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .navContainer{
@@ -38,7 +43,7 @@ body{
     margin: auto;
     border-radius: 100%;
     background: rgba(50, 50, 50, .9);
-    border: 1px dashed white;
+    border: 4px solid white;
 
     .logoTitle{
       text-align: center;
@@ -51,7 +56,7 @@ body{
         font-size: 50%;
         float:right;
         margin-right: 20%;
-        color:#77F182;
+        color:#56C5FB;
       }
     }
   }
@@ -82,50 +87,50 @@ body{
 
   .bottomNavAbout:hover{
     color:#77F182;
-    text-decoration: underline;
 
     a{
       color:#77F182;
-      text-decoration: underline;
-    }
   }
+}
 
   .bottomNavProjects:hover{
     color:#F49177;
-    text-decoration: underline;
 
     a{
       color:#F49177;
-      text-decoration: underline;
     }
   }
 
   .bottomNavResume:hover{
     color:#DECDEF;
-    text-decoration: underline;
 
     a{
       color:#DECDEF;
-      text-decoration: underline;
     }
   }
 
   .bottomNavContact:hover{
     color:#7FE7F5;
-    text-decoration: underline;
 
     a{
       color:#7FE7F5;
-      text-decoration: underline;
     }
   }
 }
 
 .aboutMeTitle{
-  color:white;
+  color:#77F182;
   text-align: center;
   font-family: 'Press Start 2P', cursive;
   margin-top: 3%;
+  margin-bottom: 2%;
+  text-decoration: underline;
+}
+
+.aboutMePictureContainerContainer{
+  width:500px;
+  height:230px;
+  margin: auto;
 }
 
 .aboutMePictureContainer{
@@ -133,17 +138,64 @@ body{
   width:200px;
   border-radius: 100%;
   margin: auto;
+  margin-left: 15%;
   margin-top: 3%;
   background-image: url("https://pbs.twimg.com/media/C-CfbekXYAAAa9y.jpg");
   background-repeat: none;
   background-position: center;
   background-size: cover;
   transition: all linear .5s;
+  border:4px solid white;
+  float:left;
+}
+
+.aboutMeDogContainer{
+  height:100px;
+  width:100px;
+  border-radius: 100%;
+  float:left;
+  margin-right: 20%;
+  border: 4px solid white;
+  background: #71879C;
+  background-image: url("http://i.imgur.com/kNJUO7l.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all linear .5s;
+}
+
+.aboutMeSpeechBubble{
+  width:125px;
+  height:100px;
+  float:right;
+  margin-right: 7%;
+  margin-top: 3%;
+  padding-left: 1%;
+  background-image: url("http://68.media.tumblr.com/avatar_f116206ed9d9_512.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 1000;
+
+  p{
+    font-family: 'Press Start 2P', cursive;
+    margin-left: 5%;
+    margin-top: 10%;
+    text-align: center;
+  }
 }
 
 .aboutMePictureContainer:hover{
   background-image: url("https://pbs.twimg.com/media/C-Cg9ZlUIAAeVwD.jpg");
   transition: all linear .5s;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.aboutMeDogContainer:hover{
+  background-image: url("https://pbs.twimg.com/media/C93U21GXUAAJcN3.jpg:large");
+  transition: all linear .5s;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .aboutMeNames{
@@ -165,7 +217,7 @@ body{
 }
 
 .aboutMeArrowLeft:hover{
-  color:yellow;
+  color:red;
 }
 
 .aboutMeArrowRight{
@@ -173,5 +225,379 @@ body{
 }
 
 .aboutMeArrowRight:hover{
+  color:#77F182;
+}
+
+.aboutMeSummary{
+  width:500px;
+  border: 4px solid white;
+  margin: auto;
+  margin-top:3%;
+  padding:2%;
+  border-radius: 5px;
+  color:grey;
+  font-size: 120%;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 150%;
+  background: #A5DDF8;
+}
+
+.aboutMeSkillsTitle{
+  font-family: 'Press Start 2P', cursive;
   color:yellow;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  text-decoration: underline;
+}
+
+.skillsContainer{
+  font-family: 'Press Start 2P', cursive;
+  color:white;
+  text-align: center;
+
+  ul{
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  li{
+    text-decoration: none;
+    list-style: none;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+}
+
+.myProjectsTitle{
+  font-family: 'Press Start 2P', cursive;
+  color:#F49177;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  text-decoration: underline;
+}
+
+.projectsContainer{
+
+  ul{
+    height:300px;
+    margin-left: 0px;
+    padding-left: 0px;
+    border-bottom: 2px dashed white;
+    padding-bottom: 2%;
+    padding-top: 2%;
+  }
+
+  .myProjectsPictureView{
+    width:175px;
+    height:175px;
+    border:4px solid white;
+    border-radius: 100%;
+    float:left;
+    margin-top: 2%;
+    margin-left: 2%;
+    background: #77F182;
+    background-image: url("http://b.illbrown.com/img/camera-collection.gif");
+    background-size: cover;
+    transition: all linear .5s;
+  }
+
+  .myProjectsPictureView:hover{
+    background-image: url("../images/view.PNG");
+    background-size: cover;
+    background-position: center;
+    transition: all linear .5s;
+    -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  }
+
+  .myProjectsPictureBarkSpark{
+    width:175px;
+    height:175px;
+    border:4px solid white;
+    border-radius: 100%;
+    float:left;
+    margin-top: 2%;
+    margin-left: 2%;
+    background: #F49177;
+    background-image: url("https://68.media.tumblr.com/25ec1da1ceb3d8c59ff61abda466e66d/tumblr_mqpocpPXk01rtd1nko2_500.gif");
+    background-size: cover;
+    transition: all linear .5s;
+  }
+
+  .myProjectsPictureBarkSpark:hover{
+    background-image: url("../images/barkspark.PNG");
+    background-size: cover;
+    background-position: center;
+    transition: all linear .5s;
+    -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  }
+
+  .myProjectsPictureLucid{
+    width:175px;
+    height:175px;
+    border:4px solid white;
+    border-radius: 100%;
+    float:left;
+    margin-top: 2%;
+    margin-left: 2%;
+    background: #006EE9;
+    background-image: url("http://31.media.tumblr.com/6fec583f2d356c5fac8b15ee380507f9/tumblr_mfikdsa59Y1rzy67oo1_500.gif");
+    background-size: cover;
+    transition: all linear .5s;
+  }
+
+  .myProjectsPictureLucid:hover{
+    background-image: url("../images/lucid.PNG");
+    background-size: cover;
+    background-position: center;
+    transition: all linear .5s;
+    -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  }
+
+  .myProjectsPictureSouthBound{
+    width:175px;
+    height:175px;
+    border:4px solid white;
+    border-radius: 100%;
+    float:left;
+    margin-top: 2%;
+    margin-left: 2%;
+    background: yellow;
+    background-image: url("http://static.tumblr.com/a68b985e8a946aed8ac054acf44b27ff/d6qr5sm/77zogar2g/tumblr_static_95bppto8wmww8k4s48wogkgs4.gif");
+    background-size: cover;
+    transition: all linear .5s;
+  }
+
+  .myProjectsPictureSouthBound:hover{
+    background-image: url("../images/southbound.PNG");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: all linear .5s;
+    -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  }
+
+  .myProjectsPictureFestival{
+    width:175px;
+    height:175px;
+    border:4px solid white;
+    border-radius: 100%;
+    float:left;
+    margin-top: 2%;
+    margin-left: 2%;
+    background: lightpink;
+    background-image: url("http://static.tumblr.com/62b379dc2173290505a8c46df5ea91ab/n8hhky4/rjvnx0hlr/tumblr_static_7d8tzwi6lxgko000ow04gwww8.gif");
+    background-size: cover;
+    transition: all linear .5s;
+  }
+
+  .myProjectsPictureFestival:hover{
+    background-image: url("../images/festival.PNG");
+    background-size:cover;
+    background-position: center;
+    transition: all linear .5s;
+    -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  }
+
+  .myProjectsProjectTitleView{
+    font-family: 'Press Start 2P', cursive;
+    color:white;
+    float:left;
+    margin-top: 3%;
+
+    a{
+      color:#77F182;
+      text-decoration: none;
+    }
+  }
+
+  .myProjectsProjectTitleView:hover{
+    border-bottom: 1px solid #77F182;
+    }
+
+  .myProjectsProjectTitleBarkSpark{
+    font-family: 'Press Start 2P', cursive;
+    color:white;
+    float:left;
+    margin-top: 3%;
+
+    a{
+      color:#E79C67;
+      text-decoration: none;
+    }
+  }
+
+  .myProjectsProjectTitleBarkSpark:hover{
+    border-bottom: 1px solid #E79C67;
+    }
+
+  .myProjectsProjectTitleLucid{
+    font-family: 'Press Start 2P', cursive;
+    color:white;
+    float:left;
+    margin-top: 3%;
+
+    a{
+      color:#006EE9;
+      text-decoration: none;
+    }
+  }
+
+  .myProjectsProjectTitleLucid:hover{
+    border-bottom: 1px solid #006EE9;
+    }
+
+  .myProjectsProjectTitleSouthBound{
+    font-family: 'Press Start 2P', cursive;
+    color:white;
+    float:left;
+    margin-top: 3%;
+
+    a{
+      color:yellow;
+      text-decoration: none;
+    }
+  }
+
+  .myProjectsProjectTitleSouthBound:hover{
+    border-bottom: 1px solid yellow;
+    }
+
+  .myProjectsProjectTitleFestival{
+    font-family: 'Press Start 2P', cursive;
+    color:white;
+    float:left;
+    margin-top: 3%;
+
+    a{
+      color:lightpink;
+      text-decoration: none;
+    }
+  }
+
+  .myProjectsProjectTitleFestival:hover{
+    border-bottom: 1px solid lightpink;
+    }
+
+  .myProjectsProjectDescriptionParagraph{
+    color:white;
+    width:500px;
+    line-height: 180%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 80%;
+    margin-top: 3%;
+    margin-right: 30%;
+    float:right;
+  }
+
+  .myProjectsProjectDescription{
+    color:white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 80%;
+    margin-top: 1.75%;
+    margin-right: 20%;
+    float:right;
+    line-height: 150%;
+    width:500px;
+  }
+}
+
+.github{
+  font-family: 'Roboto Condensed', sans-serif;
+  color:white;
+  font-size: 90%;
+  text-align: center;
+  margin-bottom: 1%;
+
+  a{
+    color:lightblue;
+    text-decoration: none;
+  }
+
+  .githubIcon{
+    display: inline;
+    margin-bottom: 1%;
+    font-size: 100%;
+    margin-left: .5%;
+  }
+}
+
+.resumeTitle{
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: underline;
+  text-align: center;
+  color: #DECDEF;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+.resume{
+  height:900px;
+  width:700px;
+  margin: auto;
+  margin-bottom: 2%;
+  border:2px dashed white;
+
+  img{
+    width:100%;
+    height:100%;
+  }
+}
+
+.contactMeTitle{
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: underline;
+  text-align: center;
+  color: #7FE7F5;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+.contactMeContainer{
+  width:500px;
+  height:555px;
+  background:#FA9292;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 2%;
+  border: 4px solid white;
+
+  i{
+    font-size: 120%;
+  }
+
+  img{
+    height:20%;
+    width:10%;
+    float:left;
+  }
+
+  ul{
+    margin-left: 15%;
+    padding-left: 0px;
+    margin-top: 15%;
+    width:300px;
+    padding-top: .5%;
+  }
+
+  li{
+    color:black;
+    line-height: 150%;
+    font-size: 90%;
+    margin-bottom: 3%;
+    margin-top: 15%;
+    list-style: none;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  a{
+    color:lightblue;
+    text-decoration: none;
+  }
 }
