@@ -22,6 +22,11 @@ function Config($stateProvider, $urlRouterProvider){
     controller: 'AboutMeController as AboutMeController'
   })
 
+  .state('root.home.projects', {
+    url: '/myProjects',
+    templateUrl: 'templates/myProjects.tpl.html'
+  })
+
   $urlRouterProvider.when('', '/home');
       $urlRouterProvider.otherwise('/not-found');
 }
