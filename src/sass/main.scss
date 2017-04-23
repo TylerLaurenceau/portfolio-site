@@ -1,5 +1,10 @@
 body{
   background:#05141A;
+  cursor:pointer;
+     -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .navContainer{
@@ -51,7 +56,7 @@ body{
         font-size: 50%;
         float:right;
         margin-right: 20%;
-        color:#77F182;
+        color:#56C5FB;
       }
     }
   }
@@ -82,41 +87,33 @@ body{
 
   .bottomNavAbout:hover{
     color:#77F182;
-    text-decoration: underline;
 
     a{
       color:#77F182;
-      text-decoration: underline;
-    }
   }
+}
 
   .bottomNavProjects:hover{
     color:#F49177;
-    text-decoration: underline;
 
     a{
       color:#F49177;
-      text-decoration: underline;
     }
   }
 
   .bottomNavResume:hover{
     color:#DECDEF;
-    text-decoration: underline;
 
     a{
       color:#DECDEF;
-      text-decoration: underline;
     }
   }
 
   .bottomNavContact:hover{
     color:#7FE7F5;
-    text-decoration: underline;
 
     a{
       color:#7FE7F5;
-      text-decoration: underline;
     }
   }
 }
@@ -156,9 +153,8 @@ body{
   height:100px;
   width:100px;
   border-radius: 100%;
-  float:right;
+  float:left;
   margin-right: 20%;
-  margin-top: 23%;
   border: 4px solid white;
   background: #71879C;
   background-image: url("http://i.imgur.com/kNJUO7l.jpg");
@@ -166,6 +162,26 @@ body{
   background-size: cover;
   background-position: center;
   transition: all linear .5s;
+}
+
+.aboutMeSpeechBubble{
+  width:125px;
+  height:100px;
+  float:right;
+  margin-right: 7%;
+  margin-top: 3%;
+  padding-left: 1%;
+  background-image: url("http://68.media.tumblr.com/avatar_f116206ed9d9_512.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 1000;
+
+  p{
+    font-family: 'Press Start 2P', cursive;
+    margin-left: 5%;
+    margin-top: 10%;
+    text-align: center;
+  }
 }
 
 .aboutMePictureContainer:hover{
@@ -389,16 +405,6 @@ body{
   transform: rotate(360deg);
   }
 
-
-
-
-  .myProjectsProjectTitle{
-    font-family: 'Press Start 2P', cursive;
-    color:white;
-    float:left;
-    margin-top: 3%;
-  }
-
   .myProjectsProjectTitleView{
     font-family: 'Press Start 2P', cursive;
     color:white;
@@ -410,6 +416,10 @@ body{
       text-decoration: none;
     }
   }
+
+  .myProjectsProjectTitleView:hover{
+    border-bottom: 1px solid #77F182;
+    }
 
   .myProjectsProjectTitleBarkSpark{
     font-family: 'Press Start 2P', cursive;
@@ -423,6 +433,10 @@ body{
     }
   }
 
+  .myProjectsProjectTitleBarkSpark:hover{
+    border-bottom: 1px solid #E79C67;
+    }
+
   .myProjectsProjectTitleLucid{
     font-family: 'Press Start 2P', cursive;
     color:white;
@@ -434,6 +448,10 @@ body{
       text-decoration: none;
     }
   }
+
+  .myProjectsProjectTitleLucid:hover{
+    border-bottom: 1px solid #006EE9;
+    }
 
   .myProjectsProjectTitleSouthBound{
     font-family: 'Press Start 2P', cursive;
@@ -447,6 +465,10 @@ body{
     }
   }
 
+  .myProjectsProjectTitleSouthBound:hover{
+    border-bottom: 1px solid yellow;
+    }
+
   .myProjectsProjectTitleFestival{
     font-family: 'Press Start 2P', cursive;
     color:white;
@@ -458,6 +480,10 @@ body{
       text-decoration: none;
     }
   }
+
+  .myProjectsProjectTitleFestival:hover{
+    border-bottom: 1px solid lightpink;
+    }
 
   .myProjectsProjectDescriptionParagraph{
     color:white;
