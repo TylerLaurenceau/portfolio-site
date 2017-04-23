@@ -122,7 +122,7 @@ body{
 }
 
 .aboutMeTitle{
-  color:white;
+  color:#77F182;
   text-align: center;
   font-family: 'Press Start 2P', cursive;
   margin-top: 3%;
@@ -171,11 +171,15 @@ body{
 .aboutMePictureContainer:hover{
   background-image: url("https://pbs.twimg.com/media/C-Cg9ZlUIAAeVwD.jpg");
   transition: all linear .5s;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .aboutMeDogContainer:hover{
   background-image: url("https://pbs.twimg.com/media/C93U21GXUAAJcN3.jpg:large");
   transition: all linear .5s;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .aboutMeNames{
@@ -210,20 +214,21 @@ body{
 
 .aboutMeSummary{
   width:500px;
-  border: 2px dashed white;
+  border: 4px solid white;
   margin: auto;
   margin-top:3%;
   padding:2%;
   border-radius: 5px;
-  color:white;
+  color:grey;
   font-size: 120%;
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 150%;
+  background: #A5DDF8;
 }
 
 .aboutMeSkillsTitle{
   font-family: 'Press Start 2P', cursive;
-  color:white;
+  color:yellow;
   text-align: center;
   margin: auto;
   margin-top: 5%;
@@ -250,7 +255,7 @@ body{
 
 .myProjectsTitle{
   font-family: 'Press Start 2P', cursive;
-  color:white;
+  color:#F49177;
   text-align: center;
   margin-top: 3%;
   margin-bottom: 2%;
@@ -287,6 +292,8 @@ body{
     background-size: cover;
     background-position: center;
     transition: all linear .5s;
+    -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
   }
 
   .myProjectsPictureBarkSpark{
@@ -308,6 +315,8 @@ body{
     background-size: cover;
     background-position: center;
     transition: all linear .5s;
+    -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
   }
 
   .myProjectsPictureLucid{
@@ -329,6 +338,8 @@ body{
     background-size: cover;
     background-position: center;
     transition: all linear .5s;
+    -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
   }
 
   .myProjectsPictureSouthBound{
@@ -347,9 +358,12 @@ body{
 
   .myProjectsPictureSouthBound:hover{
     background-image: url("../images/southbound.PNG");
-    background-size:contain;
-    background-position: center;
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
     transition: all linear .5s;
+    -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
   }
 
   .myProjectsPictureFestival{
@@ -371,6 +385,8 @@ body{
     background-size:cover;
     background-position: center;
     transition: all linear .5s;
+    -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
   }
 
 
@@ -490,14 +506,14 @@ body{
   font-family: 'Press Start 2P', cursive;
   text-decoration: underline;
   text-align: center;
-  color: white;
+  color: #DECDEF;
   margin-top: 3%;
   margin-bottom: 2%;
 }
 
 .resume{
-  height:700px;
-  width:500px;
+  height:900px;
+  width:700px;
   margin: auto;
   margin-bottom: 2%;
   border:2px dashed white;
@@ -505,5 +521,57 @@ body{
   img{
     width:100%;
     height:100%;
+  }
+}
+
+.contactMeTitle{
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: underline;
+  text-align: center;
+  color: #7FE7F5;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+.contactMeContainer{
+  width:500px;
+  height:555px;
+  background:#FA9292;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 2%;
+  border: 4px solid white;
+
+  i{
+    font-size: 120%;
+  }
+
+  img{
+    height:20%;
+    width:10%;
+    float:left;
+  }
+
+  ul{
+    margin-left: 15%;
+    padding-left: 0px;
+    margin-top: 15%;
+    width:300px;
+    padding-top: .5%;
+  }
+
+  li{
+    color:black;
+    line-height: 150%;
+    font-size: 90%;
+    margin-bottom: 3%;
+    margin-top: 15%;
+    list-style: none;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  a{
+    color:lightblue;
+    text-decoration: none;
   }
 }

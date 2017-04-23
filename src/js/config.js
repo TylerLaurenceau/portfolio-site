@@ -32,6 +32,11 @@ function Config($stateProvider, $urlRouterProvider){
     templateUrl: 'templates/resume.tpl.html'
   })
 
+  .state('root.home.contactMe', {
+    url: '/contactMe',
+    templateUrl: 'templates/contact.tpl.html'
+  })
+
   $urlRouterProvider.when('', '/home');
       $urlRouterProvider.otherwise('/not-found');
 }
