@@ -38,7 +38,7 @@ body{
     margin: auto;
     border-radius: 100%;
     background: rgba(50, 50, 50, .9);
-    border: 1px dashed white;
+    border: 4px solid white;
 
     .logoTitle{
       text-align: center;
@@ -128,21 +128,51 @@ body{
   margin-top: 3%;
 }
 
+.aboutMePictureContainerContainer{
+  width:500px;
+  height:230px;
+  margin: auto;
+}
+
 .aboutMePictureContainer{
   height:200px;
   width:200px;
   border-radius: 100%;
   margin: auto;
+  margin-left: 15%;
   margin-top: 3%;
   background-image: url("https://pbs.twimg.com/media/C-CfbekXYAAAa9y.jpg");
   background-repeat: none;
   background-position: center;
   background-size: cover;
   transition: all linear .5s;
+  border:4px solid white;
+  float:left;
+}
+
+.aboutMeDogContainer{
+  height:100px;
+  width:100px;
+  border-radius: 100%;
+  float:right;
+  margin-right: 20%;
+  margin-top: 23%;
+  border: 4px solid white;
+  background: #71879C;
+  background-image: url("http://i.imgur.com/kNJUO7l.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: all linear .5s;
 }
 
 .aboutMePictureContainer:hover{
   background-image: url("https://pbs.twimg.com/media/C-Cg9ZlUIAAeVwD.jpg");
+  transition: all linear .5s;
+}
+
+.aboutMeDogContainer:hover{
+  background-image: url("https://pbs.twimg.com/media/C93U21GXUAAJcN3.jpg:large");
   transition: all linear .5s;
 }
 
@@ -165,7 +195,7 @@ body{
 }
 
 .aboutMeArrowLeft:hover{
-  color:yellow;
+  color:red;
 }
 
 .aboutMeArrowRight{
@@ -173,5 +203,45 @@ body{
 }
 
 .aboutMeArrowRight:hover{
-  color:yellow;
+  color:#77F182;
+}
+
+.aboutMeSummary{
+  width:500px;
+  border: 2px dashed white;
+  margin: auto;
+  margin-top:3%;
+  padding:2%;
+  border-radius: 5px;
+  color:white;
+  font-size: 120%;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 150%;
+}
+
+.aboutMeSkillsTitle{
+  font-family: 'Press Start 2P', cursive;
+  color:white;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  text-decoration: underline;
+}
+
+.skillsContainer{
+  font-family: 'Press Start 2P', cursive;
+  color:white;
+  text-align: center;
+
+  ul{
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  li{
+    text-decoration: none;
+    list-style: none;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
 }
