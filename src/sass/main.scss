@@ -1325,8 +1325,8 @@
     .noPageTitle {
         font-family: 'Press Start 2P', cursive;
         color: #F76161;
-        font-size: 60%;
-        width:400px;
+        font-size: 50%;
+        width:410px;
         text-align: center;
         margin: auto;
         margin-top: 3%;
@@ -1355,13 +1355,13 @@
         font-family: 'Press Start 2P', cursive;
         color: white;
         float: right;
-        margin-right: 5%;
         margin-top: 5%;
         margin-bottom:5%;
-
+        margin-right: 0%;
         a {
             color: white;
             text-decoration: none;
+            float: right;
         }
     }
 
@@ -1369,11 +1369,5 @@
         a {
             color: #77F182;
         }
-    }
-
-    .test{
-      width:100%;
-      height:190px;
-      border:1px solid yellow;
     }
 }
