@@ -6,8 +6,8 @@ function Config($stateProvider, $urlRouterProvider){
     templateUrl: 'templates/nav.tpl.html'
   })
 
-  .state('not-found', {
-    url: '/not-found',
+  .state('danceParty', {
+    url: '/danceParty',
     templateUrl: 'templates/not-found.tpl.html'
   })
 
@@ -38,7 +38,7 @@ function Config($stateProvider, $urlRouterProvider){
   })
 
   $urlRouterProvider.when('', '/home');
-      $urlRouterProvider.otherwise('/not-found');
+      $urlRouterProvider.otherwise('/danceParty');
 }
 
 Config.inject = ['$stateProvider', '$urlRouterProvider']
