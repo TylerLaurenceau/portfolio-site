@@ -22,7 +22,6 @@ function AboutMeController(){
   function lastName(){
     vm.nameTracker = vm.nameTracker - 1;
     vm.currentName = vm.names[vm.nameTracker]
-    console.log(vm.nameTracker)
     if(vm.nameTracker < 0){
       vm.nameTracker = 9;
       vm.currentName = vm.names[vm.nameTracker]
